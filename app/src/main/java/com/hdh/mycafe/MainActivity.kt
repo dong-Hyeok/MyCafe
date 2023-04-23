@@ -60,11 +60,13 @@ class MainActivity : AppCompatActivity() {
         when (checked.itemId){
             R.id.home_fragment_Item -> {
                 binding.mainViewPager.currentItem = 0
+                binding.toolbar.title = "HOME"
                 return true
             }
 
             R.id.addCafe_fragment_Item -> {
                 binding.mainViewPager.currentItem = 1
+                binding.toolbar.title = "ADD"
                 return true
             }
 
